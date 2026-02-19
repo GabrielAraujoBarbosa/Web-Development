@@ -1,1 +1,1 @@
-## Aqui estão meus projetos do curso. Feito no Senai Morvan Figueiredo
+## Aqui estão meus projetos do curso. Feito no Senai Morvan
