@@ -66,3 +66,7 @@ article {
 article img {
     width: 239px;
 }
+
+#highlight {
+    color: rgb(32, 155, 255);
+}
