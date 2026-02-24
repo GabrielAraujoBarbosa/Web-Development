@@ -47,6 +47,22 @@ aside a, #job {
     font-weight: bold;
 }
 
+aside li {
+    padding: 5px;
+    margin: 7.5px;
+}
+
+aside li:hover {
+    background-color: #0000001f;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+aside a {
+    display: block;
+    width: 100%;
+}
+
 a#current-page {
     color: rgb(255, 75, 120);
     text-decoration: line-through;
