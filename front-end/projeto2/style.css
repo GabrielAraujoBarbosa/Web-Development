@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,900&display=swap');
+
+
+hr {
+    margin: 15px;
+}
+
+.titulo-pagina {
+    text-align: center;
+    font-style: italic;
+    font-size: 3em;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    color: darkblue;
+    margin: 10px;
+}
+
+.menu-navegacao {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.menu-navegacao ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.menu-navegacao li {
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu-navegacao a:hover{
+    background-color: cyan;
+    padding: 13px;
+    border-radius:15px;
+}
+
+.nome-da-propriedade {
+    font-size: 2em;
+    font-weight: 500px;
+    font-family: 'Roboto', sans-serif;
+    color: blue;
+    padding: 20px;
+}
+
+.nome-da-propriedade-shorthand {
+    font-size: 2em;
+    font-weight: 500px;
+    font-family: 'Roboto', sans-serif;
+    color: green;
+    padding: 20px;
+}
+
+/* CLASSES PADRÕES REUTILIZÁVEIS */
+.valor-da-propriedade {
+    font-size: 1.5em;
+    font-weight: 400px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    padding: 30px;
+}
+.container {
+    display: flex;
+    background-color: #f9eac3;
+    padding: 16px;
+    height: 500px;
+}
+.bloco {
+    height: 150px;
+    width: 150px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 16px;
+}
+.bloco-1 {
+    background-color: lightblue;
+}
+.bloco-2 {
+    background-color: lightpink;
+}
+.bloco-3 {
+    background-color: red;
+}
+div.bloco-sem-altura {
+    width: 150px;
+    height: 0;
+}
+.bloco-1-fontes-diferentes {
+    font-size: 40px;
+}
+.bloco-2-fontes-diferentes {
+    font-size: 60px;
+}
+.bloco-3-fontes-diferentes {
+    font-size: 150px;
+}
+
+/* CLASSES QUE CONFIGURAM A DIREÇÃO PRINCIPAL DO FLEXBOX */
+.container-row {
+    flex-direction: row;
+}
+.container-column {
+    flex-direction: column;
+}
+.container-column-reverse {
+    flex-direction: column-reverse;
+}
+.container-row-reverse {
+    flex-direction: row-reverse;
+}
+
+/* CLASSES QUE MEXEM NO EIXO PRIMÁRIO */
+.container-justify-center {
+    flex-direction: row;
+    justify-content: center;
+}
+.container-justify-flex-start {
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.container-justify-flex-end {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.container-justify-space-between {
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container-justify-space-evenly {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.container-justify-space-around {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+/* CLASSES QUE MEXEM NO EIXO SECUNDÁRIO */
+.container-alignitems-center {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container-alignitems-flex-start {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.container-alignitems-flex-end {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+.container-alignitems-stretch {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+.container-alignitems-baseline{
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+
+.container-flexwrap-nowrap{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.container-flexwrap-wrap{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container-flexwrap-wrapreverse{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+
+.container-flexflow-row-nowrap
+{
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: nowrap; */
+    flex-flow: row nowrap;
+}
+
+.container-align-content-center{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.container-align-content-flexstart{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.container-align-content-flexend
+{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+.container-align-content-spacebetween
+{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.container-align-content-spacearound
+{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.container-align-content-spaceevenly{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
