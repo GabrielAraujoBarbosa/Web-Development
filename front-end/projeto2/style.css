@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,900&display=swap');
-
-
+/* PADRÕES REUTILIZÁVEIS */
 hr {
     margin: 15px;
 }
-
 .titulo-pagina {
     text-align: center;
     font-style: italic;
@@ -14,36 +11,30 @@ hr {
     color: darkblue;
     margin: 10px;
 }
-
 .menu-navegacao {
   width: 80%;
   margin: auto;
   text-align: center;
 }
-
 .menu-navegacao ul {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
 }
-
 .menu-navegacao li {
   padding: 20px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 1.3em;
 }
-
 a {
     text-decoration: none;
 }
-
-.menu-navegacao a:hover{
+.menu-navegacao a:hover {
     background-color: cyan;
     padding: 13px;
     border-radius:15px;
 }
-
 .nome-da-propriedade {
     font-size: 2em;
     font-weight: 500px;
@@ -51,16 +42,9 @@ a {
     color: blue;
     padding: 20px;
 }
-
-.nome-da-propriedade-shorthand {
-    font-size: 2em;
-    font-weight: 500px;
-    font-family: 'Roboto', sans-serif;
+span {
     color: green;
-    padding: 20px;
 }
-
-/* CLASSES PADRÕES REUTILIZÁVEIS */
 .valor-da-propriedade {
     font-size: 1.5em;
     font-weight: 400px;
@@ -71,7 +55,6 @@ a {
 .container {
     display: flex;
     background-color: #f9eac3;
-    padding: 16px;
     height: 500px;
 }
 .bloco {
@@ -80,7 +63,7 @@ a {
     text-align: center;
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
-    border-radius: 16px;
+    border-radius: 50%;
 }
 .bloco-1 {
     background-color: lightblue;
@@ -105,6 +88,7 @@ div.bloco-sem-altura {
     font-size: 150px;
 }
 
+
 /* CLASSES QUE CONFIGURAM A DIREÇÃO PRINCIPAL DO FLEXBOX */
 .container-row {
     flex-direction: row;
@@ -118,6 +102,7 @@ div.bloco-sem-altura {
 .container-row-reverse {
     flex-direction: row-reverse;
 }
+
 
 /* CLASSES QUE MEXEM NO EIXO PRIMÁRIO */
 .container-justify-center {
@@ -168,50 +153,47 @@ div.bloco-sem-altura {
     justify-content: center;
     align-items: stretch;
 }
-.container-alignitems-baseline{
+.container-alignitems-baseline {
     flex-direction: row;
     justify-content: center;
     align-items: baseline;
 }
 
 
-.container-flexwrap-nowrap{
+/* CLASSES QUE MEXEM NO FLEX-WRAP */
+.container-flexwrap-nowrap {
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
 }
-
-.container-flexwrap-wrap{
+.container-flexwrap-wrap {
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-.container-flexwrap-wrapreverse{
+.container-flexwrap-wrapreverse {
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap-reverse;
 }
 
-.container-flexflow-row-nowrap
-{
-    /* flex-direction: row; */
-    justify-content: center;
-    align-items: center;
-    /* flex-wrap: nowrap; */
-    flex-flow: row nowrap;
+
+/* CLASSE QUE MEXEM NO FLEX-DIRECTION E FLEX-WRAP PELO SHORTHAND FLEX-FLOW */
+.container-flexflow-column-nowrap {
+    flex-flow: column nowrap;
 }
 
-.container-align-content-center{
+
+/* CLASSES QUE MEXEM NO ALIGN-CONTENT (ALINHAMENTO ENTRE OS ITENS NA TRANSVERSAL - EIXO SECUNDÁRIO) */
+.container-align-content-center {
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     align-content: center;
 }
-
 .container-align-content-flexstart{
     flex-direction: row;
     justify-content: center;
@@ -219,17 +201,14 @@ div.bloco-sem-altura {
     flex-wrap: wrap;
     align-content: flex-start;
 }
-
-.container-align-content-flexend
-{
+.container-align-content-flexend {
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     align-content: flex-end;
 }
-.container-align-content-spacebetween
-{
+.container-align-content-spacebetween {
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -237,8 +216,7 @@ div.bloco-sem-altura {
     align-content: space-between;
 }
 
-.container-align-content-spacearound
-{
+.container-align-content-spacearound {
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -246,7 +224,7 @@ div.bloco-sem-altura {
     align-content: space-around;
 }
 
-.container-align-content-spaceevenly{
+.container-align-content-spaceevenly {
     flex-direction: row;
     justify-content: center;
     align-items: center;
