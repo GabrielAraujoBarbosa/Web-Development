@@ -1,0 +1,54 @@
+:root {
+    --button-color: #3498db;
+    --dark-color: #292929;
+    --light-color: #ebebeb;
+    --javascript-color: #eece00;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Segoe UI', Helvetica, sans-serif;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
+span {
+    font-weight: 600;
+}
+button {
+    font: inherit;
+    padding: 10px 20px;
+    border: none;
+    font-weight: 600;
+
+    border-radius: 5px;
+    background-color: var(--button-color);
+    cursor: pointer;
+}
+.js-dark:hover {
+    color: var(--javascript-color);
+}
+.js-light:hover {
+    background-color: var(--javascript-color);
+    border-radius: 2px;
+}
+
+.light {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+.dark {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+.button-dark {
+    color: var(--light-color);
+    box-shadow: var(--light-color) 0px 1px 3px;
+
+}
+
+.button-light {
+    color: var(--dark-color);
+    box-shadow: var(--dark-color) 0px 1px 3px;
+}
