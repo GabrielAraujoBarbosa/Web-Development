@@ -1,0 +1,7 @@
+.hideElement {
+    display: none;
+}
+
+#errorIcon {
+    color: #d32736;
+}
