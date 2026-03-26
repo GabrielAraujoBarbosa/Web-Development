@@ -1,4 +1,5 @@
 const express = require("express")
+const cors = require("cors")
 require("dotenv").config()
 
 const { initDb } = require("./db")
@@ -9,6 +10,11 @@ const productsRoutes = require("./routes/products.routes")
 const app = express()
 
 app.use(express.json())
+
+// CORS liberado para uso educacional
+// Isso permite que o front no GitHub Pages consiga chamar a API no Railway
+app.use(cors())
+app.options("*", cors())
 
 app.get("/", (req, res) => {
   res.json({ status: "ok", name: "Catalogo API" })
